@@ -10,27 +10,26 @@ void main(){
     
     FILE *arq = fopen("test.txt","r");
     
-    texto = ConteudoDoArquivo(arq);
+    texto = ConteudoDoArquivo(arq);	
 
-    if(arq == NULL){
-        printf("Aquivo inexistente!!");
-    }else{
-        
-        imprimeResultado(arq, texto);
-    }
+	rewind(arq);
+
+    imprimeResultado(arq, texto);
+    
     fclose(arq);
     
 }
 
 
-char **ConteudoDoArquivo(FILE *arq)
-{
+char **ConteudoDoArquivo(FILE *arq) {
     
     char **result;
     int nlin = getLinhas(arq);
     int i=0, j=0;
     
-    result = (char**) malloc(nlin * sizeof(char*)); 
+    rewind(arq);
+
+    result = (char**)malloc(nlin * sizeof(char*)); 
     for(i = 0; i<nlin; i++){
         result[i] = (char*) malloc(300 * sizeof(char));
         fgets(result[i], 300, arq);
