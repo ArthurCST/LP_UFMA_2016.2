@@ -28,7 +28,7 @@ char **ConteudoDoArquivo(FILE *arq)
     
     char **result;
     int nlin = getLinhas(arq);
-    int i=0, j=0;
+    int i=0;
     
     result = (char**) malloc(nlin * sizeof(char*)); 
     for(i = 0; i<nlin; i++){
