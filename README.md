@@ -1,1 +1,1 @@
-# Linguagem_De_Programa-o_UFMA
+# Linguagem_De_Programacao_UFMA
