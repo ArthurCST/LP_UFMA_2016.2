@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/** (1º)
-* Escreva uma função que receba duas listas
+/** (1Âº)
+* Escreva uma funÃ§Ã£o que receba duas listas
 * de inteiros A e B, e retorne uma terceira
-* lista C que consiste na união de todos os
+* lista C que consiste na uniÃ£o de todos os
 * elementos das listas A e B. A lista C deve
 * ter todos elementos ordenados do maior para
-* menor e não pode haver elementos repetidos.
+* menor e nÃ£o pode haver elementos repetidos.
 **/
 
 /** LISTAS **/
@@ -121,7 +121,7 @@
 /** FUNCOES **/
 
 
-/** MAIN **/
+/** MAIN **/
     void main()
     {
         LISTA *lista_A = gerar_lista();
